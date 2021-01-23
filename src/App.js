@@ -1,19 +1,42 @@
-//import logo from './logo.svg';
 import React from "react";
-import Weather from "./Weather";
-import './App.css';
+import Search from "./Search";
+import Temperature from "./Temperature";
+import Forecast from "./Forecast";
 
-function App() {
+import "./App.css";
+
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>
-          Hello World
-        </h1>
-        <Weather city="Paris"/>
-      </header>
+      <div className="weather-app-wrapper">
+        <div className="weather-app">
+          <p className="units">
+            <a href="#" id="celcius-link" class="celActive">
+              {" "}
+              °C{" "}
+            </a>{" "}
+            |
+            <a href="#" id="fahrenheit-link" class="fahActive">
+              {" "}
+              °F{" "}
+            </a>
+            <a href="#" id="curr-location" class="">
+              {" "}
+              📍{" "}
+            </a>
+          </p>
+          <Search />
+          <Temperature />
+          <Forecast />
+        </div>
+        <small className="source-code">
+          <a href="https://github.com/Allyia98/weather-react" target="_blank">
+            {" "}
+            Open Source Code
+          </a>{" "}
+          by Allyia Rahim
+        </small>
+      </div>
     </div>
   );
 }
-
-export default App;

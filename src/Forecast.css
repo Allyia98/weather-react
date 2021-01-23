@@ -1,0 +1,27 @@
+.hourly-forecast {
+  margin: 0px 10px;
+  padding: 20px 10px;
+  border: thick double #f3efee;
+  border-radius: 15px;
+  border-width: 4px;
+  text-align: center;
+}
+
+.weather-forecast {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.rounded-circle {
+  max-width: 50px;
+}
+
+footer {
+  padding: 80px 10px 10px;
+}
+
+h5 {
+  text-align: left;
+  font-weight: 100;
+}
