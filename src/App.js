@@ -11,16 +11,16 @@ export default function App() {
       <div className="weather-app-wrapper">
         <div className="weather-app">
           <p className="units">
-            <a href="#" id="celcius-link" class="celActive">
+            <a href="foo" id="celcius-link" class="celActive">
               {" "}
               °C{" "}
             </a>{" "}
             |
-            <a href="#" id="fahrenheit-link" class="fahActive">
+            <a href="foo" id="fahrenheit-link" class="fahActive">
               {" "}
               °F{" "}
             </a>
-            <a href="#" id="curr-location" class="">
+            <a href="foo" id="curr-location" class="">
               {" "}
               📍{" "}
             </a>
@@ -30,7 +30,7 @@ export default function App() {
           <Forecast />
         </div>
         <small className="source-code">
-          <a href="https://github.com/Allyia98/weather-react" target="_blank">
+          <a href="https://github.com/Allyia98/weather-react" target="_blank" rel="noreferrer">
             {" "}
             Open Source Code
           </a>{" "}
