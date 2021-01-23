@@ -13,6 +13,7 @@ export default function Forecast() {
             <img
               src="http://openweathermap.org/img/wn/10d@2x.png"
               class="rounded-circle"
+              alt="round"
             />
             <br />
             5°
@@ -24,6 +25,7 @@ export default function Forecast() {
             <img
               src="http://openweathermap.org/img/wn/10d@2x.png"
               className="rounded-circle"
+              alt="round"
             />
             <br />
             5°
@@ -35,6 +37,7 @@ export default function Forecast() {
             <img
               src="http://openweathermap.org/img/wn/10d@2x.png"
               className="rounded-circle"
+              alt="round"
             />
             <br />
             5°
@@ -46,6 +49,7 @@ export default function Forecast() {
             <img
               src="http://openweathermap.org/img/wn/10d@2x.png"
               className="rounded-circle"
+              alt="round"
             />
             <br />
             5°

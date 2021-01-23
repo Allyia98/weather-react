@@ -35,6 +35,7 @@ export default function Temperature() {
             <img
               src="http://openweathermap.org/img/wn/10d@2x.png"
               id="icon"
+              alt="icon"
             />{" "}
           </li>
           <li id="temp-description"> Rain </li>
