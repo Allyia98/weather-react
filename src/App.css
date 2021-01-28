@@ -3,11 +3,6 @@
   text-align: center;
 }
 
-body {
-  font-family: "Varela Round", sans-serif;
-  line-height: 1.5;
-}
-
 .weather-app-wrapper {
   max-width: 600px;
   margin: 30px auto;

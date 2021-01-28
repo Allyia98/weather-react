@@ -27,6 +27,7 @@ export default function App() {
             </a>
           </p>
           <Search />
+          <br />
           <Temperature />
           <Forecast />
         </div>
