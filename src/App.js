@@ -8,6 +8,7 @@ import "./App.css";
 export default function App() {
   return (
     <div className="App">
+      <div className="container"> 
       <div className="weather-app-wrapper">
         <div className="weather-app">
           <p className="units">
@@ -36,6 +37,7 @@ export default function App() {
           </a>{" "}
           by Allyia Rahim
         </small>
+      </div>
       </div>
     </div>
   );
