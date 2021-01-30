@@ -28,7 +28,7 @@ export default function App() {
           </p>
           <Search />
           <br />
-          <Temperature />
+          <Temperature defaultCity="Toronto"/>
           <Forecast />
         </div>
         <small className="source-code">

@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function Forecast() {
+
   return (
     <form id="search-form">
       <div className="row">
