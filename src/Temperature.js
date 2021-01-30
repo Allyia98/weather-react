@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import FormattedDate from "./FormattedDate";
 import axios from "axios";
 
 import "./Temperature.css";
@@ -7,7 +8,6 @@ export default function Temperature(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
 
   function handleResponse(response){
-    console.log(response.data);
     setWeatherData({
       ready: true,
       temperature: response.data.main.temp,
@@ -16,7 +16,7 @@ export default function Temperature(props) {
       humidity: response.data.main.humidity,
       description: response.data.weather[0].description,
       iconUrl: "http://openweathermap.org/img/wn/10d@2x.png",
-      date: "Sunday, 08:00",
+      date: new Date(response.data.dt * 1000),
       high: response.data.main.temp_max,
       low: response.data.main.temp_min,
       feels: response.data.main.feels_like
@@ -37,7 +37,7 @@ export default function Temperature(props) {
         <section className="header">
           <h1 id="current-city">{weatherData.city}</h1>
           <p id="updated-date">
-            Last updated: {weatherData.date} <br /> <span id="date"></span>
+            Last updated: <FormattedDate date={weatherData.date}/> <br /> <span id="date"></span>
           </p>
         </section>
 
