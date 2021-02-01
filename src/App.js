@@ -1,6 +1,5 @@
 import React from "react";
 import Search from "./Search";
-import Temperature from "./Temperature";
 import Forecast from "./Forecast";
 
 import "./App.css";
@@ -26,9 +25,8 @@ export default function App() {
               📍{" "}
             </a>
           </p>
-          <Search />
+              <Search defaultCity="Toronto"/>
           <br />
-          <Temperature defaultCity="Toronto"/>
           <Forecast />
         </div>
         <small className="source-code">
