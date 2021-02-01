@@ -25,7 +25,7 @@ export default function App() {
               📍{" "}
             </a>
           </p>
-              <Search defaultCity="Toronto"/>
+          <Search defaultCity="Toronto"/>
           <br />
           <Forecast />
         </div>

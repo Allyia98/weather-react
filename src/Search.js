@@ -16,7 +16,7 @@ export default function Forecast(props) {
       city: response.data.name,
       humidity: response.data.main.humidity,
       description: response.data.weather[0].description,
-      iconUrl: "http://openweathermap.org/img/wn/10d@2x.png",
+      iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
       date: new Date(response.data.dt * 1000),
       high: response.data.main.temp_max,
       low: response.data.main.temp_min,
