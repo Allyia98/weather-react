@@ -10,21 +10,6 @@ export default function App() {
       <div className="container"> 
       <div className="weather-app-wrapper">
         <div className="weather-app">
-          <p className="units">
-            <a href="foo" id="celcius-link" class="celActive">
-              {" "}
-              °C{" "}
-            </a>{" "}
-            |
-            <a href="foo" id="fahrenheit-link" class="fahActive">
-              {" "}
-              °F{" "}
-            </a>
-            <a href="foo" id="curr-location" class="">
-              {" "}
-              📍{" "}
-            </a>
-          </p>
           <Search defaultCity="Toronto"/>
           <br />
           <Forecast />

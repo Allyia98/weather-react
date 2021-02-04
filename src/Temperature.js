@@ -1,5 +1,6 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
+import WeatherTemperature from "./WeatherTemperature";
 
 import "./Temperature.css";
 
@@ -8,8 +9,8 @@ export default function Temperature(props) {
     <div className="row">
       <div className="col-4">
         <ul className="high-low">
-          <li id="high-temp"> High: {props.data.high}° </li>
-          <li id="low-temp"> Low: {props.data.low}°</li>
+          <li id="high-temp"> High: {Math.round(props.data.high)}° </li>
+          <li id="low-temp"> Low: {Math.round(props.data.low)}°</li>
         </ul>
       </div>
 
@@ -20,12 +21,9 @@ export default function Temperature(props) {
             Last updated: <FormattedDate date={props.data.date}/> <br /> <span id="date"></span>
           </p>
         </section>
-
+        
         <section className="temperature">
-          <h1 id="curr-temp"> {Math.round(props.data.temperature)}°C</h1> {/* check */}
-          <small>
-            <span id="feels-like"> Feels like {Math.round(props.data.feels)}°</span>
-          </small>
+          <WeatherTemperature celsius={props.data.temperature} feels={props.data.feels}/> 
         </section>
       </div>
 

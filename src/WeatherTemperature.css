@@ -1,0 +1,14 @@
+.celActive:hover,
+.fahActive:hover {
+  text-decoration: none;
+}
+
+.temp {
+  font-size: 50px;
+  text-align: center;
+}
+
+.unit {
+  float: right;
+  margin-left: -100px;
+}
