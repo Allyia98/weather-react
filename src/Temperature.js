@@ -15,18 +15,19 @@ export default function Temperature(props) {
       </div>
 
       <div className="col-4">
-        <section className="header">
+        <span className="header">
           <h1 id="current-city">{props.data.city}</h1>
+          </span>
           <p id="updated-date">
             Last updated: <FormattedDate date={props.data.date}/> <br /> <span id="date"></span>
           </p>
-        </section>
+        
         
         <section className="temperature">
           <WeatherTemperature celsius={props.data.temperature} feels={props.data.feels}/> 
         </section>
       </div>
-
+      
       <div className="col-4">
         <ul className="additional-info">
           <li>
@@ -37,12 +38,14 @@ export default function Temperature(props) {
               alt={props.data.description}
             />{" "}
           </li>
-          <li className="text-capitalize" id="temp-description"> {props.data.description} </li>
+          </ul>
+          <ul>
+          <li className="text-capitalize" id="temp-description"> {props.data.description}</li>
           <li id="humidity"> Humidity: {props.data.humidity}%</li>
           <li id="wind"> Wind: {Math.round(props.data.wind)}km/hr</li>
           <li id="percipitation"></li>
         </ul>
       </div>
-    </div>
+      </div>
   );
 }
