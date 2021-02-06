@@ -1,6 +1,5 @@
 import React from "react";
 import Search from "./Search";
-import Forecast from "./Forecast";
 
 import "./App.css";
 
@@ -10,9 +9,7 @@ export default function App() {
       <div className="container"> 
       <div className="weather-app-wrapper">
         <div className="weather-app">
-          <Search defaultCity="Toronto"/>
-          <br />
-          <Forecast />
+          <Search defaultCity="Tokyo"/>
         </div>
         <small className="source-code">
           <a href="https://github.com/Allyia98/weather-react" target="_blank" rel="noreferrer">

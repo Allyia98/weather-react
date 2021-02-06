@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Temperature from "./Temperature";
+import WeatherForecast from "./Forecast";
 import axios from "axios";
 
 import"./Search.css";
@@ -41,7 +42,7 @@ export default function Forecast(props) {
   }
 
 if(weatherData.ready) {
-  return (
+  return(
     <div className="Weather"> 
     <form id="search-form" onSubmit={handleSubmit}>
       <div className="row">
@@ -68,11 +69,12 @@ if(weatherData.ready) {
     </form>
     <br />
     <Temperature data={weatherData} />
+   <WeatherForecast city={weatherData.city}/>
    </div>
-   );
+  );
  
   } else {
     search();
-    return "Loading...";
+    return "loading...";
   }
 }
